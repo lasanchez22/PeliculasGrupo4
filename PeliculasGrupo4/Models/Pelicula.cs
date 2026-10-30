@@ -24,5 +24,9 @@ namespace PeliculasGrupo4.Models
         [StringLength(500, ErrorMessage = "La sinopsis no puede exceder los 500 caracteres.")]
         [Display(Name = "Sinopsis")]
         public string? Sinopsis { get; set; }
+
+        [Display(Name = "Género")]
+        public int GeneroId { get; set; }
+        public Genero? Genero { get; set; }
     }
 }
