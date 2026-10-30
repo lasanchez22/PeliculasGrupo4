@@ -19,7 +19,7 @@ namespace PeliculasGrupo4.Models
         [Required(ErrorMessage = "La duración es obligatoria.")]
         [Range(1, 300, ErrorMessage = "La duración debe estar entre 1 y 300 minutos.")]
         [Display(Name = "Duración (minutos)")]
-        public int DuracionMinutos { get; set; }
+        public int? DuracionMinutos { get; set; }
 
         [StringLength(500, ErrorMessage = "La sinopsis no puede exceder los 500 caracteres.")]
         [Display(Name = "Sinopsis")]
